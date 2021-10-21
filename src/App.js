@@ -4,14 +4,12 @@ import { CardList } from "./components/card-list/card-list.component";
 import { SearchBox } from "./components/search-box/search-box.component";
 
 class App extends Component {
-  constructor(props) {
-    super();
 
-    this.state = {
-      monsters: [],
-      searchField: "",
-    };
-  }
+  this.state = {
+    monsters: [],
+    searchField: "",
+  };
+
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
