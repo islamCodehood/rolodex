@@ -5,7 +5,7 @@ import { SearchBox } from "./components/search-box/search-box.component";
 
 class App extends Component {
 
-  this.state = {
+  state = {
     monsters: [],
     searchField: "",
   };
